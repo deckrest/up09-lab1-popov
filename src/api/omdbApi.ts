@@ -3,7 +3,7 @@ import axios from 'axios';
 import { API_KEY } from '../config';
 import { MovieSearchResponse } from '../types/movie';
 
-const BASE_URL = 'http://www.omdbapi.com/';
+const BASE_URL = 'https://www.omdbapi.com/';
 
 export const fetchMovies = async (searchTerm: string): Promise<MovieSearchResponse> => {
   const response = await axios.get(BASE_URL, {

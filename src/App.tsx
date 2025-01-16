@@ -1,13 +1,16 @@
 import React from 'react';
-import Search from './features/search/Search.tsx';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MovieList from '../src/components/card/MovieCard'; // Component to display the list of movies
+import MovieDetail from '../src/pages/MovieDetail'; // Component for movie details
 
 const App: React.FC = () => {
   return (
-    <div>
-      <h1>Поиск фильмов</h1>
-      <Search />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element=<MovieList/> />
+        <Route path="/movie/:id" element=<MovieDetail /> />
+      </Routes>
+    </Router>
   );
 };
 

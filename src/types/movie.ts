@@ -4,6 +4,7 @@ export interface Movie {
     Title: string;
     Year: string;
     Poster: string;
+    Description: string;
   }
   
   export interface MovieSearchResponse {
