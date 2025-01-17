@@ -1,7 +1,7 @@
 // src/features/search/hooks/useSearch.ts
 import { useState } from 'react';
-import { fetchMovies } from '../../../api/omdbApi.ts';
-import { Movie, MovieSearchResponse } from '../../../types/movie.ts'
+import { fetchMovies } from '../api/omdbApi.ts';
+import { Movie, MovieSearchResponse } from '../../entity/movie/movie.ts'
 
 export const useSearch = () => {
   const [searchTerm, setSearchTerm] = useState<string>('');

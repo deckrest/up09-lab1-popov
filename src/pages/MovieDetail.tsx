@@ -1,9 +1,8 @@
 import React from 'react';
 import ImageNotFound from '../assets/notFound.png'
-import {Link} from 'react-router-dom';
 
 interface MovieDetailProps {
-  id: number; // Add an id prop for the movie
+  id: number;
   title: string;
   year: string;
   description: string;

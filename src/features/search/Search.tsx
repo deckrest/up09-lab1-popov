@@ -1,6 +1,5 @@
-// src/features/search/Search.tsx
 import React from 'react';
-import { useSearch } from './hooks/useSearch';
+import { useSearch } from '../../shared/hooks/useSearch';
 import MovieInput from '../../components/input/Input';
 import MovieButton from '../../components/button/Button';
 import MovieCard from '../../components/card/MovieCard';
@@ -18,10 +17,10 @@ const Search: React.FC = () => {
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {movies.map(movie => (
           <MovieCard 
+            id={parseInt(movie.imdbID)}
             key={movie.imdbID} 
             title={movie.Title} 
             year={movie.Year} 
-            poster={movie.Poster} 
           />
         ))}
       </div>

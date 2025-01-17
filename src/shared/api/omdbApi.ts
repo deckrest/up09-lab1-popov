@@ -1,7 +1,7 @@
 // src/api/omdbApi.ts
 import axios from 'axios';
-import { API_KEY } from '../config';
-import { MovieSearchResponse } from '../types/movie';
+import { API_KEY } from '../../config';
+import { MovieSearchResponse } from '../../entity/movie/movie';
 
 const BASE_URL = 'https://www.omdbapi.com/';
 
