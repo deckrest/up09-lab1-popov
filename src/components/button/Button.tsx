@@ -1,5 +1,6 @@
 // src/features/search/components/MovieButton.tsx
 import React from 'react';
+import './button.css'
 
 interface MovieButtonProps {
   onClick: () => void;
@@ -7,7 +8,7 @@ interface MovieButtonProps {
 
 const MovieButton: React.FC<MovieButtonProps> = ({ onClick }) => {
   return (
-    <button onClick={onClick}>Поиск</button>
+    <button className='searchButton' onClick={onClick}>Поиск</button>
   );
 };
 

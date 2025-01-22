@@ -1,0 +1,10 @@
+.searchInput{
+    all: unset;
+    width: 20rem;
+    height: 1.2rem;
+    padding: 10px;
+    border-radius: 56px 0 0 56px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+

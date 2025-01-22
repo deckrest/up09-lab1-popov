@@ -1,5 +1,6 @@
 // src/features/search/components/MovieInput.tsx
 import React from 'react';
+import './input.css';
 
 interface MovieInputProps {
   value: string;
@@ -13,6 +14,7 @@ const MovieInput: React.FC<MovieInputProps> = ({ value, onChange }) => {
       value={value} 
       onChange={onChange} 
       placeholder="Введите название фильма" 
+      className='searchInput'
     />
   );
 };

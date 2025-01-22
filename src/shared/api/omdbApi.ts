@@ -14,5 +14,5 @@ export const fetchMovies = async (searchTerm: string): Promise<MovieSearchRespon
     }
   });
   
-  return response.data as MovieSearchResponse; // Приведение типа к MovieSearchResponse
+  return response.data as MovieSearchResponse;
 };

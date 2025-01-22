@@ -1,0 +1,16 @@
+.movieDetailCont{
+
+    width: 100%;
+    height: 100%;
+}
+
+.movieDetailBoxInfo{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    flex-direction: column;
+    background-color: rgb(49, 48, 48);
+    padding:25px;
+}

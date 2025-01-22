@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './heartButton.css';
 
 const HeartButton: React.FC = () => {
   const [liked, setLiked] = useState(false);
@@ -8,7 +9,10 @@ const HeartButton: React.FC = () => {
   };
 
   return (
-    <button onClick={handleClick} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+    <button 
+      onClick={handleClick} 
+      className={`heart-button ${liked ? 'liked' : ''}`}
+    >
       <svg
         className={`w-6 h-6 ${liked ? 'text-red-500' : 'text-gray-800'} dark:text-white`}
         aria-hidden="true"
