@@ -11,7 +11,7 @@ const Search: React.FC = () => {
 
   return (
     <div>
-        <div className='search'>
+        <div className="searchCont">
           <MovieInput
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}

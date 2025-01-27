@@ -1,12 +1,18 @@
-// src/features/search/components/MovieButton.tsx
-// import React from 'react';
-import './favoritesList.css';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './favoritesList.css'
 
+const FavoriteListButton: React.FC = () => {
+  const navigate = useNavigate();
 
+  const handleClick = () => {
+    navigate('/favorites');
+  };
 
-const FavoriteListButton = ({}) => {
   return (
-    <button className='favoriteButton'>My Favorited List</button>
+    <button onClick={handleClick} className='favoriteButton'>
+      Избранное
+    </button>
   );
 };
 

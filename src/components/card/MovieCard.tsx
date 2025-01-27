@@ -1,4 +1,3 @@
-// MovieCard.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './MovieCard.css';
@@ -19,7 +18,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ id, title, year }) => {
         <h3>{title}</h3>
         <p>{year}</p>
       </Link>
-      <HeartButton />
+      <HeartButton id={id} title={title} year={year} /> {/* Передаем title и year */}
     </div>
   );
 };

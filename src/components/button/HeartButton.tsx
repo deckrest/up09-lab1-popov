@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './heartButton.css';
+import useStore from '../../shared/hooks/useStore'; // Укажите правильный путь
 
-const HeartButton: React.FC = () => {
-  const [liked, setLiked] = useState(false);
+interface HeartButtonProps {
+  id: string;
+  title: string; // Добавьте title и year в пропсы
+  year: string;
+}
+
+const HeartButton: React.FC<HeartButtonProps> = ({ id, title, year }) => {
+  const { movies, toggleLike } = useStore();
+  const movie = movies.find(movie => movie.id === id);
+  const liked = movie ? movie.liked : false;
 
   const handleClick = () => {
-    setLiked(!liked);
+    toggleLike(id, title, year); // Передаем title и year
   };
 
   return (
