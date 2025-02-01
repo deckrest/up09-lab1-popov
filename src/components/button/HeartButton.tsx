@@ -1,10 +1,10 @@
 import React from 'react';
 import './heartButton.css';
-import useStore from '../../shared/hooks/useStore'; // Укажите правильный путь
+import useStore from '../../shared/hooks/useStore';
 
 interface HeartButtonProps {
   id: string;
-  title: string; // Добавьте title и year в пропсы
+  title: string;
   year: string;
 }
 
@@ -14,7 +14,8 @@ const HeartButton: React.FC<HeartButtonProps> = ({ id, title, year }) => {
   const liked = movie ? movie.liked : false;
 
   const handleClick = () => {
-    toggleLike(id, title, year); // Передаем title и year
+      // TODO: переписать, чтобы параметром выступал весь объект Movie
+    toggleLike(id, title, year);
   };
 
   return (

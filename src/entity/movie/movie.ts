@@ -12,5 +12,5 @@ export interface Movie {
     Search: Movie[];
     totalResults: string;
     Response: string;
-    Error?: string; // Ошибка может быть не определена
+    Error?: string;
   }

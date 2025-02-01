@@ -3,22 +3,17 @@ import { Link } from 'react-router-dom';
 import './MovieCard.css';
 import ImageNotFound from '../../assets/notFound.png';
 import HeartButton from '../button/HeartButton';
+import { Movie } from '../../entity/movie/movie';
 
-interface MovieCardProps {
-  id: string;
-  title: string;
-  year: string;
-}
-
-const MovieCard: React.FC<MovieCardProps> = ({ id, title, year }) => {
+const MovieCard: React.FC<Movie> = ({ imdbID, Title, Year }) => {
   return (
     <div className="movie-card">
-      <Link to={`/movie/${id}`}>
-        <img src={ImageNotFound} alt={title} />
-        <h3>{title}</h3>
-        <p>{year}</p>
+      <Link to={`/movie/${imdbID}`}>
+        <img src={ImageNotFound} alt={Title} />
+        <h3>{Title}</h3>
+        <p>{Year}</p>
       </Link>
-      <HeartButton id={id} title={title} year={year} /> {/* Передаем title и year */}
+      <HeartButton id={imdbID} title={Title} year={Year} />
     </div>
   );
 };

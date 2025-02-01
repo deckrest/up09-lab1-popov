@@ -1,17 +1,15 @@
-/* heartButton.css */
-
 .heart-button {
     background: none;
     border: none;
     cursor: pointer;
-    transition: color 0.3s; /* Плавный переход цвета */
+    transition: color 0.3s; 
   }
   
   .heart-button:hover {
-    color: #ff6347; /* Цвет при наведении */
+    color: #ff6347; 
   }
   
   .liked {
-    color: #ff0000; /* Цвет, когда кнопка "нравится" */
+    color: #ff0000;
   }
   

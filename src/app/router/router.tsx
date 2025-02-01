@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Search from "../../features/search/Search";
+import Search from "../../pages/Search/Search";
 import MovieDetail from "../../pages/MovieDetail";
 import FavoritesPage from "../../pages/FavoritesPage"; // Импортируйте новую страницу
 
